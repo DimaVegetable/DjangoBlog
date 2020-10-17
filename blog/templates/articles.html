@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+{% block article%}
+{% for article in articles %}
+	<h4>Заголовок: {{ article.article_title}}</h4>
+	<p><a href="/articles/get/{{article.id}}">{{article.article_text}}</a></p>
+	<h6>Дата публикации: {{ article.article_date}}</h6>
+	<hr>
+{% endfor %}
+{% endblock %}

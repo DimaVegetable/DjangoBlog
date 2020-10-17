@@ -1,0 +1,16 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.css' %}">
+	<title>Django</title>
+</head>
+<body>
+
+	<h1>Blog</h1>	
+	<h1><a href="admin/">Admin panel</a></h1>
+
+	{% block article %}{% endblock %}
+
+</body>
+</html>
